@@ -2,10 +2,13 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  width: 100vw;
+  overflow-x: hidden;
+  /* background-color: black; */
 }
-main{
-    background: linear-gradient(to right, rgb(244,102,195), rgb(241, 178, 41));
-
+main {
+  width: 100vw;
+  background: linear-gradient(to right, rgb(244, 102, 195), rgb(241, 178, 41));
 }
 img {
   height: 100%;
@@ -36,58 +39,171 @@ header {
   margin-right: 30px;
   gap: 15px;
 }
+.headb {
+  cursor: pointer;
+}
+
 .headbimg {
   height: 28px;
-}
-.bodyimg{
-    background-image: url('/images/img1.jpg');
-    height: 80vh;
-    background-size: cover;
-    /* position: relative; */
-    display: flex;
-    width: 100vw;
-    align-items: center;
+  cursor: pointer;
 }
 .bodyimg {
-    background-image: url(/images/img1.jpg);
-    height: 90vh;
-    background-size: cover;
-    /* position: relative; */
-    display: flex;
-    width: 100vw;
-    align-items: center;
+  background-image: url("/images/img1.jpg");
+  height: 80vh;
+  background-size: cover;
+  /* position: relative; */
+  display: flex;
+  width: 100vw;
+  align-items: center;
+}
+.bodyimg {
+  background-image: url(/images/img1.jpg);
+  height: 90vh;
+  background-size: cover;
+  /* position: relative; */
+  display: flex;
+  width: 100vw;
+  align-items: center;
 }
 
 .bodytext {
-    max-width: 700px;
-    margin-left: 70px;
-    background-color: rgba(255, 103, 95, 0.527);
-    padding: 0px 130px 35px 40px;
-    color: aliceblue;
-    font-family: 'Poppins', sans-serif;
+  max-width: 700px;
+  margin-left: 70px;
+  background-color: rgba(255, 103, 95, 0.527);
+  padding: 0px 130px 35px 40px;
+  color: aliceblue;
+  font-family: "Poppins", sans-serif;
 }
 
 .bodytext h1 {
-    font-size: 55px;
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 3px;
-    margin-bottom: 0;
+  font-size: 55px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 3px;
+  margin-bottom: 0;
 }
 
 .bodytext p {
-    margin-top: 0;
-    font-size: 18px;
-    max-width: 500px;
-    font-weight: 300;
+  margin-top: 0;
+  font-size: 18px;
+  max-width: 500px;
+  font-weight: 300;
 }
 
-.nextheading{
-    font-size: 50px;
-    margin-top: 80px;
-    text-align: center;
-    letter-spacing: 8px;
-    color: aliceblue;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+.nextheading {
+  width: 100vw;
+  font-size: 50px;
+  margin-top: 80px;
+  text-align: center;
+  letter-spacing: 8px;
+  color: aliceblue;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.foodcontainer {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  width: 100vw;
+  min-height: 75vh;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+  /* padding: 0px 30px; */
+}
+
+.food {
+  width: 300px;
+  background-color: aliceblue;
+  padding: 25px;
+  border-top-right-radius: 90px;
+  border-bottom-left-radius: 22%;
+}
+
+.foodimg {
+  height: 300px;
+  border-top-right-radius: 80px;
+  overflow: hidden;
+}
+
+.foodcontainer h2 {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.foodcontainer p {
+  text-align: center;
+  padding: 0 20px;
+  margin-top: 0px;
+}
+
+.buttoncont {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+button {
+  border: none;
+  padding: 15px 65px;
+  border-radius: 30px;
+  font-size: 23px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  background-color: rgba(240, 248, 255, 0.466);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1047px) {
+  .nextheading {
+    margin-bottom: 20px;
+  }
+  .food {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  header{
+    height: 80px;
+
+  }
+  .headcont{
+    align-items: center;
+    font-size: 18px;
+    gap: 40px;
+    flex-wrap: wrap;
+    height: 80px;
+    margin-bottom: 1px;
+  }
+  .bodyimg{
+    justify-content: center;
+  }
+  .bodytext{
+    padding: 40px;
+    margin: 0;
+  }
+  .bodytext h1{
+    font-size: 40px;
+  }
+  .bodytext p{
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+
+  .hide{
+    /* border: solid; */
+    display: none;
+  }
+  .headbimg{
+    height: 20px;
+  }
 }
